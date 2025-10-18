@@ -14,51 +14,43 @@
   <title>Estação sabor</title>
 </head>
 <body>
-  <header>
-    <section>
-      <!--logo-->
-      <a href="/">
-        <img src="./assets/image/Logo_resized v1.png" alt="Logo">
-      </a>
+  <header class="container-fluid site-header">
+    <section class="container ">
+      <!--Topo:foco organizacional-->
+      <section class="top-row d-flex align-items-center justify-content-between">
+        <!--logo-->
+        <a href="/">
+          <img src="./assets/image/logo.png" alt="Logo">
+        </a>
+        <!--Botão-->
+        <button type="button" class="btn btn-danger">Cartão Presente</button>
+      </section>
       <!--Menu-->
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Cadapio</a>
-          </li>
-          
-          <li>
-            <a href="#">Novidades</a>
-          </li>
-
-          <li>
-            <a href="#">Localização</a>
-          </li>
-
-          <li>
-            <a href="#">Sobre nos</a>
-          </li>        
+      <nav class="menu-row d-flex justify-content-center">
+        <ul class="menu-list d-flex list-unstyled m-0">
+          <li class="menu-itens"><a href="#">Cadápio</a></li>
+          <li class="menu-itens"><a href="#">Novidades</a></li>
+          <li class="menu-itens"><a href="#">Localização</a></li>
+          <li class="menu-itens"><a href="#">Sobre nós</a></li>        
         </ul>
       </nav>
-      <!--Botão-->
-      <button type="button" class="btn btn-danger">Cartão presente</button>
     </section>
   </header>
 
-  <main>
-    <section id="banne-novidade" class="carousel slide" data-bs-ride="carousel">
+  <!--Carrocel dos bannes-->
+  <section id="banne-novidade" class="carousel slide" data-bs-ride="carousel">
     <!--Imagens-->
     <div class="carousel-inner">
       <figure class="carousel-item active">
-        <img src="./assets/image/Banner-1_v1.png" class="d-block w-100" alt="banner-1">
+        <img src="./assets/image/banner-1.png" class="d-block w-100" alt="banner-1">
       </figure>
 
       <figure class="carousel-item">
-        <img src="./assets/image/Banner-2_v1.png" class="d-block w-100" alt="banner-2">
+        <img src="./assets/image/banner-2.png" class="d-block w-100" alt="banner-2">
       </figure>
 
       <figure class="carousel-item">
-        <img src="./assets/image/Banner-3_v1.png" class="d-block w-100" alt="banner-3">
+        <img src="./assets/image/banner-3.png" class="d-block w-100" alt="banner-3">
       </figure>
     </div>
     <!--Previous-->
@@ -71,30 +63,81 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-    </section>
+  </section>
 
-    <section>
+  <main class="container-fluid">
+    <section class="container">
       <!--Titulo-->
       <h1>Cadapio</h1>
       <!--Imagens que leva a os produto-->
       <figcaption>
         <a href="#">
-          <img src="">
+          <img src="./assets/image/hambuguere.png">
         </a>
 
         <a href="#">
-          <img src="">
+          <img src="assets/image/pizza.png">
         </a>
 
         <a href="#">
-          <img src="">
+          <img src="assets/image/bebida.png">
+        </a>
+
+        <a href="#">
+          <img src="assets/image/salgado.png">
         </a>
         
         <a href="#">
-          <img src="">
+          <img src="assets/image/sobremesa.png">
         </a>
 
       </figcaption>
+    </section>
+    <!--Carrocel das informações-->
+    <section id="carouselDeInformacoes" class="carousel slide" data-bs-ride="carousel">
+      <section class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDeInformacoes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDeInformacoes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselDeInformacoes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </section>
+      <!--Imagens com suas informações-->
+      <section class="carousel-inner">
+        <figcaption class="carousel-item active">
+          <img src="./assets/image/carrocel-da-localizacão.jpg" class="d-block w-100" alt="...">
+          <article class="carousel-caption d-none d-md-block">
+            <h5>Encontre a sua extação</h5>
+            <p>Localize a estação próximo de você</p>
+            <button type="button" class="btn btn-danger">Estaremos Te Esperando</button>
+          </article>
+        </figcaption>
+
+        <figcaption class="carousel-item">
+          <img src="./assets/image/carrocel-de-familia.jpg" class="d-block w-100" alt="...">
+          <article class="carousel-caption d-none d-md-block">
+            <h5>Veja os feedback dos nossos clientes</h5>
+            <p>Aqui você pode ver o que as pessoas estão falando da nossa estação e também um luga para você deixa a sua avaliação</p>
+            <button type="button" class="btn btn-danger">Experimente</button>
+          </article>
+        </figcaption>
+
+        <figcaption class="carousel-item">
+          <img src="./assets/image/carrocel-de-homem.jpg" class="d-block w-100" alt="...">
+          <article class="carousel-caption d-none d-md-block">
+            <h5>Conheça a nossa historia</h5>
+            <p>Conheça as origens da Estação Sabor</p>
+            <button type="button" class="btn btn-danger">Veja Mais</button>
+          </article>
+        </figcaption>
+      </section>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </section>
   </main>
 
@@ -108,15 +151,15 @@
           <!--Links-->
           <ul>
             <li>
-              <a href="">Suporte</a>
+              <a href="#">Suporte</a>
             </li>
 
             <li>
-              <a href="">Perguntas Frequente</a>
+              <a href="#">Perguntas Frequente</a>
             </li>
 
             <li>
-              <a href="">Franquia</a>
+              <a href="#">Franquia</a>
             </li>
           </ul>
         </article>
@@ -126,20 +169,20 @@
           <!--links-->
           <ul>
             <li>
-              <a href="">
-                <img src="">
+              <a href="#">
+                <img src="#">
               </a>
             </li>
 
             <li>
-              <a href="">
-                <img src="">
+              <a href="#">
+                <img src="#">
               </a>
             </li>
 
             <li>
-              <a href="">
-                <img src="">
+              <a href="#">
+                <img src="#">
               </a>
             </li>
           </ul>
