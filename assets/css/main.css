@@ -1,0 +1,24 @@
+/*Estilização do svg*/
+.font-path{
+  margin-top: 15px;
+  fill: #f41000;
+}
+/*Estilização das imagens*/
+.menu-card{
+  border: 5px solid #d90429;
+  border-radius: 10px;
+  margin-bottom: 20px; 
+}
+/*Efeito animado*/
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 25px rgba(0,0,0,0.80);
+}
+
+
+
+
+
+
+
+
