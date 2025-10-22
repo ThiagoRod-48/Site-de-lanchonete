@@ -38,13 +38,12 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 /*Estilização da fonte do menu */
 .menu-row .menu-list a {
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0 10px;
+  margin: 0 0 0 10px;
   transition: all 0.3s ease;
   text-decoration: none;
 }

@@ -11,8 +11,14 @@ footer{
   color: #fff;
 }
 /*Espaçamento*/
-.info-lanchonete{
-  margin-left: 215px;
+footer .row {
+  justify-content: center; /* centraliza horizontalmente o conjunto */
+  gap: 60px;               /* espaço entre as colunas */
+}
+
+.info-lanchonete,
+.rede-s {
+  margin-left: 40px;       /* move levemente para a direita */
 }
 /*Confirações da Nossa Lanchonete*/
 .conteudo li a{

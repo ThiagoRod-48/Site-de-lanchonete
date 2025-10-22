@@ -1,0 +1,153 @@
+@media (max-width:923px){
+  /*Ajuste do menu(Conteudo 2)*/
+  .menu-row .menu-list li a {
+    white-space: nowrap; 
+  }
+}
+
+@media (max-width:844px){
+  /*Ajuste do menu(Conteudo 2)*/
+  .menu-row .menu-list li a {
+     white-space: nowrap;
+  }
+}
+
+@media (max-width:767px){
+  /*Ajuste do espaçamento entre o header e o main*/
+  .site-header{
+    margin-bottom: 40px;
+  }
+  /*Ajuste do menu(Conteudo 2)*/
+  .menu-row .menu-list li a {
+    font-size: 0.7rem;
+    margin-left: 7px;   
+  }
+  /*Ajuste do botão do header(botão-header)*/
+  .botão-header{      
+    white-space: nowrap;       
+  }
+  /*Ajuste das imagens*/
+  .menu-main a{
+    width: 48%;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .menu-main a img.menu-card{
+    width: 100%;
+    height: auto;
+  }
+  /*Tira o carrossel dos banners*/
+  .carousel-slide{
+    display: none;
+  }
+  /*Ajustando e Colocando as informações do carrossel de informações*/
+  #carouselDeInformacoes .carousel-caption.d-none.d-md-block {
+    display: block !important;   
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12%;                  
+    width: 92%;
+    padding: 12px;
+    max-height: 40vh;            
+    overflow-y: auto;            
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #carouselDeInformacoes .carousel-caption h5 {
+    font-size: 1.25rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+
+  #carouselDeInformacoes .carousel-caption p {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  #carouselDeInformacoes .carousel-caption .btn {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.9rem;
+  }
+
+  #carouselDeInformacoes .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh; 
+    object-fit: cover;
+    display: block;
+  }
+  /*Ajustando a possição das informações do footer*/
+  footer .row {
+    flex-direction: column;   
+    align-items: center;      
+    text-align: center;       
+    gap: 30px;                
+  }
+
+  .info-lanchonete,
+  .rede-s {
+    margin-left: 0;           
+    width: 100%;              
+  }
+
+  .info-lanchonete ul {
+    padding-left: 0; 
+  }
+}
+
+@media (max-width: 605px){
+  /*Ajuste do menu(Conteudo 2)*/
+  .menu-row .menu-list li a {
+    white-space: nowrap; 
+  }
+  /*Tirando o carrossel de informações*/
+  #carouselDeInformacoes{
+    display: none !important;
+  }
+  /*Ajustando o espaçamento entre o main e o footer*/
+  .menu-main a{
+    margin-bottom: -5px;
+  }
+}
+
+@media (max-width:575px){
+  /*Ajuste do menu(Conteudo 2)*/
+  .menu-row .menu-list li a {
+    font-size: 0.6rem;
+    margin-left: 6px;   
+  }
+
+  .menu-row{
+    margin-top: 10px;
+  }
+  /*Tirando o botão do header(botão-header)*/
+  .botão-header{
+    display: none;
+  }
+  /*Tirando o menu(Conteudo 1)*/
+  .menu-header ul li a{
+    display: none;
+  }  
+  /*Centralizando o logo*/
+  .top-row {
+    flex-direction: column; 
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  /*Ajustando o svg*/
+  .font-path {
+    width: 80%;   
+    height: auto; 
+  }
+  /*Ajustando as imagens*/
+  .menu-main a {
+    flex: 0 0 100% !important; 
+    max-width: 80% !important;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 5px;     
+  }
+}
